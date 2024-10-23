@@ -35,7 +35,7 @@
 //
 //    Notice that the name of the parameter doesn't matter. Some use
 //    self, others use a lowercase version of the type name, but feel
-//    free to use whatever is most appropriate.
+//    free to use whatever is most appropriate. (self is best, screw the rest!)
 //
 // Okay, you're armed.
 //
@@ -88,7 +88,7 @@ pub fn main() void {
         for (&aliens) |*alien| {
 
             // *** Zap the alien with the heat ray here! ***
-            ???.zap(???);
+            heat_ray.zap(alien);
 
             // If the alien's health is still above 0, it's still alive.
             if (alien.health > 0) aliens_alive += 1;
